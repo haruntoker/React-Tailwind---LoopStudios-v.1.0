@@ -7,13 +7,15 @@ export default {
   ],
   theme: {
     extend: {
-     
-      gridTemplateColumns:{
-        '70/30':'70% 28%',
+      fontFamily: {
+        sans: ['"Reddit Mono"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      },
+      gridTemplateColumns: {
+        '70/30': '70% 30%',
       },
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
   ],
 }

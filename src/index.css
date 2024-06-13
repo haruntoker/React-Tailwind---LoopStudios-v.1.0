@@ -1,4 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import 'flowbite/dist/flowbite.css'; */
+
+
+
+/* deskto version */
+#hero{
+    background-image: url('../src/assets/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* mobile version */
+
+@media (max-width: 574px){
+    #hero{
+    background-image: url('../src/assets/desktop/image-hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+}

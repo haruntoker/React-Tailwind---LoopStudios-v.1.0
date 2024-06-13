@@ -10,19 +10,40 @@ export default function Navbar() {
 
   return (
     <section id="section">
-      <div className="bg-gray-200 border-gray-200 dark:bg-gray-900 shadow-xl ">
-        <nav className="">
-          <div className="max-w-screen-4xl text-2xl flex flex-wrap items-center justify-between mx-auto p-6">
-            <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/city-flat-2/512/tree_element_nature_plant_garden_bush-1024.png"
-                className="h-12"
-                alt="Logo"
-              />
+      <div className="bg-gray-200 border-gray-200 dark:bg-gray-900 shadow-xl flex items-center justify-center">
+        <nav className="w-full">
+          <div className="relative flex items-center justify-between max-w-screen-4xl text-2xl flex-wrap mx-auto p-6">
+            {/* Logo Section */}
+            <a href="/" className="flex-shrink-0 flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="https://cdn3.iconfinder.com/data/icons/eco-tech/512/09_Green_Technology.png" className="h-12" alt="Logo" />
               <span className="self-center dark:text-white text-bold text-3xl font-semibold whitespace-nowrap mt-2">
-                FlufFu
+                loopstudios
               </span>
             </a>
+
+            {/* Centered Navbar items */}
+            <div className="flex-1 flex justify-center items-center">
+              <div className="hidden md:flex space-x-8 rtl:space-x-reverse">
+                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Home
+                </a>
+                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  About
+                </a>
+                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Services
+                </a>
+                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Pricing
+                </a>
+                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Contact
+                </a>
+                <DarkMode />
+              </div>
+            </div>
+
+            {/* Mobile Menu Button */}
             <button
               data-collapse-toggle="navbar-default"
               type="button"
@@ -48,21 +69,24 @@ export default function Navbar() {
                 />
               </svg>
             </button>
-            <div className={`w-full md:block md:w-auto ${isMenuOpen ? 'block' : 'hidden'}`} id="navbar-default tracking-wider">
-              <ul className="font-small flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+            {/* Mobile Menu */}
+            <div className={`w-full md:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
+              <ul className="font-small flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <a
                     href="#"
-                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black 0 md:p-0 dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     aria-current="page"
                   >
                     Home
                   </a>
                 </li>
                 <li>
+             
                   <a
                     href="#"
-                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black  0 md:p-0 dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     About
                   </a>
@@ -70,7 +94,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#"
-                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black   md:p-0 dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Services
                   </a>
@@ -78,7 +102,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#"
-                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black   md:p-0 dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Pricing
                   </a>
@@ -86,7 +110,7 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#"
-                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Contact
                   </a>
