@@ -32,3 +32,8 @@
 <div>
 </div>
 </section>
+
+
+<!-- hidden : note -->
+<div className="hidden md:flex">
+- it gonne be hidden in <sm> screen, when hit the <md> screen gonna be visible.

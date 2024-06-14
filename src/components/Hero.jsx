@@ -1,10 +1,28 @@
+import SubHero from "./SubHero";
+import SocialProof from "./SocialProof"
+import Lottie from 'lottie-react';
+import Animation from '../assets/desktop/Animation - 1718353947790.json'
+
 export default function Hero() {
   return (
-    <section id="hero" className="bg-white dark:bg-gray-900">
+    <section id="hero" >
      {/* hero */}
-     <div className="container max-w-6xl mx-auto px-6 py-28 md:px-0">
+    
+     <div className="flex flex-1 max-w-screen   mx-auto px-6 sm:mb-4">
+        <div className="max-w-7xl text-center flex-1 mt-32 md:mb-32 p-4 font-sans text-2xl dark:text-white text-gray-900  md:p-10 md:m-32 md:mx-0 md:text-6xl rounded-2xl">
+         <h1 className="font-mono font-bold tracking-wide"> Impressive experience that deliver</h1>
+         <SocialProof />
+        </div>
+      {/* animation start */}
+     <div className="hidden  md:flex flex-row-reverse  mt-20 inset-0 z-0 pointer-events-none">
+    <Lottie animationData={Animation} loop={true} />
+    </div>
+    {/* animation end */}
         
      </div>
+        <SubHero />
     </section>
   );
 }
+
+

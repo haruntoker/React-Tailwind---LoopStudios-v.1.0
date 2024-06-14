@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DarkMode from "./DarkMode";
 
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,20 +17,18 @@ export default function Navbar() {
             {/* Logo Section */}
             <a href="/" className="flex-shrink-0 flex items-center space-x-3 rtl:space-x-reverse">
               <img src="https://cdn3.iconfinder.com/data/icons/eco-tech/512/09_Green_Technology.png" className="h-12" alt="Logo" />
-              <span className="self-center dark:text-white text-bold text-3xl font-semibold whitespace-nowrap mt-2">
+              <span className="hidden lg:flex self-center dark:text-white text-bold text-3xl font-semibold whitespace-nowrap mt-2">
                 loopstudios
               </span>
             </a>
 
             {/* Centered Navbar items */}
             <div className="flex-1 flex justify-center items-center">
-              <div className="hidden md:flex space-x-8 rtl:space-x-reverse">
+              <div className="hidden group md:flex space-x-8 lg:space-x-16 rtl:space-x-reverse">
                 <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Home
                 </a>
-                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
-                  About
-                </a>
+                
                 <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Services
                 </a>
@@ -37,11 +36,16 @@ export default function Navbar() {
                   Pricing
                 </a>
                 <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  About
+                </a>
+                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Contact
                 </a>
-                <DarkMode />
               </div>
             </div>
+                <div className="hidden md:flex">
+                <DarkMode />
+                </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -56,7 +60,7 @@ export default function Navbar() {
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="#"
                 fill="none"
                 viewBox="0 0 17 14"
               >
