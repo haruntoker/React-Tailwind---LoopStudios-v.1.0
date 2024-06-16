@@ -11,6 +11,7 @@ export default function TestimonialHero() {
     src="https://cdn3.iconfinder.com/data/icons/eco-tech/512/09_Green_Technology.png"
     alt="Tech Company Logo"
   />
+  
   <figure className="mt-10">
     <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 dark:text-gray-300 sm:text-2xl sm:leading-9">
       <p>
@@ -19,7 +20,7 @@ export default function TestimonialHero() {
     </blockquote>
     <figcaption className="mt-10">
       <img
-        className="mx-auto h-15 w-12 rounded-full"
+        className="mx-auto h-15 w-12 rounded-full shadow-2xl"
         src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="CEO of Tech Company"
       />
