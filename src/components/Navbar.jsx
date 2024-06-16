@@ -24,22 +24,22 @@ export default function Navbar() {
 
             {/* Centered Navbar items */}
             <div className="flex-1 flex justify-center items-center">
-              <div className="hidden group md:flex space-x-8 lg:space-x-16 rtl:space-x-reverse">
-                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
-                  Home
+              <div className="hidden group md:flex space-x-8 lg:space-x-16 rtl:space-x-reverse px-6">
+                <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Our Services
                 </a>
                 
-                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
-                  Services
+                <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Our Team
                 </a>
-                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
-                  Pricing
+                <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                  Careers
                 </a>
-                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                {/* <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   About
-                </a>
-                <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
-                  Contact
+                </a> */}
+                <a href="#" className="duration-300 text-slate-700 bg-gradient-to-r from-cyan-500 to-blue-500 dark:text-white dark:hover:text-slate-400 border rounded-xl px-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border-blue-500">
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     aria-current="page"
                   >
-                    Home
+                    Our Services
                   </a>
                 </li>
                 <li>
@@ -92,7 +92,7 @@ export default function Navbar() {
                     href="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    About
+                    Our Team
                   </a>
                 </li>
                 <li>
@@ -100,23 +100,23 @@ export default function Navbar() {
                     href="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    Services
+                    Careers
                   </a>
                 </li>
                 <li>
-                  <a
+                  {/* <a
                     href="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Pricing
-                  </a>
+                  </a> */}
                 </li>
                 <li>
                   <a
                     href="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    Contact
+                    Contact Us
                   </a>
                 </li>
                 <DarkMode />

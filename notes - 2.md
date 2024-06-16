@@ -37,3 +37,19 @@
 <!-- hidden : note -->
 <div className="hidden md:flex">
 - it gonne be hidden in <sm> screen, when hit the <md> screen gonna be visible.
+
+<!-- flex-col / flex-row -->
+1 - use, <flex-col> for <small screen>
+2 - use, <flex-row> for <medium screen> e.g. <md:flex:row>
+
+
+<!-- container -->
+ <container> class in Tailwind CSS is used to create a fixed-width container that centers the content horizontally and adjusts its width responsively based on the screen size.
+<container> helps in creating consistent layouts by keeping the content within a specified maximum width while maintaining proper alignment.
+ 
+ 
+<brief summary> ::::::
+
+<Fixed Width> The container has a maximum width that changes based on the screen size.
+<Centered Content> The content inside the container is centered horizontally.
+<Responsive> The container’s width adjusts according to the screen size to ensure a good layout on all devices.

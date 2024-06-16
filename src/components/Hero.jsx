@@ -1,7 +1,7 @@
-import SubHero from "./SubHero";
 import TestimonialHero from "./TestimonialHero";
 import Lottie from 'lottie-react';
 import Animation from '../assets/desktop/Animation .json'
+
 
 
 export default function Hero() {
@@ -21,7 +21,7 @@ export default function Hero() {
     {/* animation end */}
         
      </div>
-        <SubHero />
+     
     </section>
   );
 }
