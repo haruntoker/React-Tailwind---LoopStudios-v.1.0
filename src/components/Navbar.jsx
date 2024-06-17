@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DarkMode from "./DarkMode";
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -15,30 +16,31 @@ export default function Navbar() {
         <nav className="w-full">
           <div className="relative flex items-center justify-between max-w-screen-4xl text-2xl flex-wrap mx-auto p-6">
             {/* Logo Section */}
-            <a href="/" className="flex-shrink-0 flex items-center space-x-3 rtl:space-x-reverse">
+            <Link to="/" className="flex-shrink-0 flex items-center space-x-3 rtl:space-x-reverse">
               <img src="https://cdn3.iconfinder.com/data/icons/eco-tech/512/09_Green_Technology.png" className="h-12" alt="Logo" />
               <span className="hidden lg:flex self-center dark:text-white text-bold text-3xl font-semibold whitespace-nowrap mt-2">
                 loopstudios
               </span>
-            </a>
+            </Link>
 
             {/* Centered Navbar items */}
             <div className="flex-1 flex justify-center items-center">
               <div className="hidden group md:flex space-x-8 lg:space-x-16 rtl:space-x-reverse px-6">
-                <a href="/" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                <Link to="/" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Our Services
-                </a>
+                </Link>
                 
-                <a href="/team" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                <Link to="/team" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Our Team
-                </a>
-                <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                </Link>
+
+                <Link to="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Careers
-                </a>
+                </Link>
                
-                <a href="#" className="duration-300 text-slate-700 bg-gradient-to-r from-cyan-500 to-blue-500 dark:text-white dark:hover:text-slate-400 border rounded-xl px-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border-blue-500">
+                <Link to="#" className="duration-300 text-slate-700 bg-gradient-to-r from-cyan-500 to-blue-500 dark:text-white dark:hover:text-slate-400 border rounded-xl px-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border-blue-500">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
                 <div className="hidden md:flex">
@@ -76,46 +78,38 @@ export default function Navbar() {
             <div className={`w-full md:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
               <ul className="font-small flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     aria-current="page"
                   >
                     Our Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
              
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Our Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  {/* <a
-                    href="#"
-                    className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Pricing
-                  </a> */}
-                </li>
-                <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="duration-300 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-white md:dark:hover:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <DarkMode />
               </ul>
