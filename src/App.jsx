@@ -1,4 +1,5 @@
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import ReactDOM from 'react-dom';
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import Layout from "./layouts/Layout";
 import { Flowbite} from 'flowbite-react';
 

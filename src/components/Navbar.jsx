@@ -35,9 +35,7 @@ export default function Navbar() {
                 <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Careers
                 </a>
-                {/* <a href="#" className="duration-300 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
-                  About
-                </a> */}
+               
                 <a href="#" className="duration-300 text-slate-700 bg-gradient-to-r from-cyan-500 to-blue-500 dark:text-white dark:hover:text-slate-400 border rounded-xl px-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border-blue-500">
                   Contact Us
                 </a>
