@@ -53,3 +53,7 @@
 <Fixed Width> The container has a maximum width that changes based on the screen size.
 <Centered Content> The content inside the container is centered horizontally.
 <Responsive> The container’s width adjusts according to the screen size to ensure a good layout on all devices.
+
+
+<!-- text color -->
+<bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent>

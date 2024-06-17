@@ -13,9 +13,9 @@ export default function TestimonialHero() {
   />
   
   <figure className="mt-10">
-    <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 dark:text-gray-300 sm:text-2xl sm:leading-9">
+    <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 dark:text-gray-300 sm:text-2xl sm:leading-9 ">
       <p>
-        “At our tech company, we are committed to pushing the boundaries of innovation. Our cutting-edge solutions empower businesses to thrive in a rapidly evolving digital landscape.”
+        “In LoopStudios, we are committed to pushing the boundaries of innovation. Our cutting-edge solutions empower businesses to thrive in a rapidly evolving digital landscape.”
       </p>
     </blockquote>
     <figcaption className="mt-10">
@@ -35,7 +35,7 @@ export default function TestimonialHero() {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <div className="text-gray-600 dark:text-gray-300">CEO of LoopStudios</div>
+        <div className="text-gray-600 dark:text-gray-300 ">CEO of LoopStudios</div>
       </div>
     </figcaption>
   </figure>
