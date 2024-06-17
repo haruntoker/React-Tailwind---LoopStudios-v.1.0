@@ -1,28 +1,70 @@
-import React from 'react';
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import Layout from "./layouts/Layout";
 import { Flowbite} from 'flowbite-react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import SubHero from "./components/SubHero";
+
+// Speare Components
 // import Companies from './components/Companies'
 // import Content from "./components/Content";
-import Footer from './components/Footer';
 // import Demo from './components/Demo';
-import Services from './components/Services';
 
+
+
+
+
+
+
+
+
+// Import Components From Page
+import HomePage from "./pages/HomePage";
+
+
+
+
+
+
+
+
+
+// Define the Home component for the root path
+const HomePageComp = () =>(
+  <Layout>
+    <HomePage />
+  </Layout>
+)
+
+
+
+
+
+
+
+// router
+const router = createBrowserRouter([
+{path:'/', element: <HomePageComp />}
+
+
+
+
+])
+
+
+
+
+
+
+
+
+
+
+// route
 function App() {
   return (
     <Flowbite>
       <div className="min-h-screen">
-       
-        <Navbar />
-        <Hero />
-        {/* <Demo /> */}
-        <SubHero />
-        <Services />
-        {/* <Content /> */}
-        {/* <Companies /> */}
-        <Footer />
-        
+
+        <RouterProvider router={router} />
+
       </div>
     </Flowbite>
   );
