@@ -6,7 +6,8 @@ export default function Services() {
 <section id='services' className="bg-white dark:bg-gray-900 md:mt-32">
   <div className="container flex flex-col py-8 px-4 mx-auto max-w-screen-4xl sm:py-16 lg:px-6">
     <div className="max-w-screen text-center items-center justify-center mb-8 lg:mb-16">
-      <h2 className="mb-4 md:text-5xl tracking-wide font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
+      <h2 className="mb-4 md:text-2xl tracking-wide font-extrabold text-gray-700 dark:text-white">Our Services</h2>
+      <h2 className="mb-6 md:text-5xl tracking-wider font-extrabold  bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent">Empowering Your Vision</h2>
       <p className="text-gray-500 sm:text-xl dark:text-gray-400">At LoopStudios, we are dedicated to advancing technology and driving innovation to create long-term value and foster economic growth.</p>
     </div>
     <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
