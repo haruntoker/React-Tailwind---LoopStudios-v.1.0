@@ -19,6 +19,7 @@ import { Flowbite} from 'flowbite-react';
 // <<<Import Components From Page>>>
 import HomePage from "./pages/HomePage";
 import Team from "./pages/Team";
+import NotFound from './pages/NotFound';
 
 
 
@@ -40,6 +41,12 @@ const TeamPage = () => (
   <Layout>
     <Team />
   </Layout>
+);
+
+const NotFoundPage = () =>(
+  
+    <NotFound />
+  
 )
 
 
@@ -53,6 +60,7 @@ const TeamPage = () => (
 const router = createBrowserRouter([
 {path:'/', element: <HomePageComp />},
 {path:'/team', element: <TeamPage />},
+{path:'*', element: <NotFoundPage />},
 
 
 
