@@ -3,10 +3,10 @@ import { Flowbite} from 'flowbite-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SubHero from "./components/SubHero";
-import Companies from './components/Companies'
-import Content from "./components/Content";
+// import Companies from './components/Companies'
+// import Content from "./components/Content";
 import Footer from './components/Footer';
-import Demo from './components/Demo';
+// import Demo from './components/Demo';
 import Services from './components/Services';
 
 function App() {
