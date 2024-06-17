@@ -6,23 +6,19 @@ import Animation from '../assets/desktop/Animation .json'
 
 export default function Hero() {
   return (
-    <section id="hero" >
-     {/* hero */}
-     <div className="flex flex-1 max-w-screen   mx-auto px-6 sm:mb-4">
-        <div className="max-w-7xl text-center flex-1 mt-32 md:mb-32 p-4 font-sans text-2xl dark:text-white text-gray-900  md:p-10 md:m-32 md:mx-0 md:text-6xl rounded-2xl">
-         <h1 className="font-mono font-bold tracking-wide py-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg"> Impressive experience that deliver</h1>
-         <TestimonialHero />
+    <section className="bg-white dark:bg-gray-900">
+    <div className=" grid max-w-screen-5xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-6 text-center p-4 font-sans text-5xl">
+        <h1 className="font-mono font-bold tracking-wide py-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg"> Impressive experience that deliver</h1>
+            
+            <TestimonialHero />
         </div>
-        
-      {/* animation start */}
-     <div className="hidden md:flex flex-row-reverse  mt-20 inset-0 z-0 pointer-events-none">
-    <Lottie animationData={Animation} loop={true} />
+        <div className="hidden lg:mt-0 lg:col-span-6 lg:flex">
+            {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup"/> */}
+            <Lottie animationData={Animation} loop={true} />
+        </div>                
     </div>
-    {/* animation end */}
-        
-     </div>
-     
-    </section>
+</section>
   );
 }
 

@@ -12,6 +12,7 @@ export default function TestimonialHero() {
     alt="Tech Company Logo"
   />
   
+  
   <figure className="mt-10">
     <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 dark:text-gray-300 sm:text-2xl sm:leading-9 ">
       <p>
