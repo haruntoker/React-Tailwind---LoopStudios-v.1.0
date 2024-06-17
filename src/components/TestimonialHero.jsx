@@ -22,7 +22,7 @@ export default function TestimonialHero() {
     <figcaption className="mt-10">
       <img
         className="mx-auto h-15 w-12 rounded-full shadow-2xl"
-        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://img.freepik.com/free-photo/international-day-education-celebration_23-2150931022.jpg?t=st=1718632748~exp=1718636348~hmac=1a5181717c8d39edf053d4141473bc6a2262f585dab2a60fe4d27cac30799e18&w=1800"
         alt="CEO of Tech Company"
       />
       <div className="mt-4 flex items-center justify-center space-x-3 text-base">

@@ -25,11 +25,11 @@ export default function Navbar() {
             {/* Centered Navbar items */}
             <div className="flex-1 flex justify-center items-center">
               <div className="hidden group md:flex space-x-8 lg:space-x-16 rtl:space-x-reverse px-6">
-                <a href="#services" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                <a href="/" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Our Services
                 </a>
                 
-                <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
+                <a href="/team" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">
                   Our Team
                 </a>
                 <a href="#" className="duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-gray-900 hover:text-black dark:text-white dark:hover:text-slate-400">

@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import { Flowbite} from 'flowbite-react';
 
-// Speare Components
+//       <<<<  Speare Components>>>>
 // import Companies from './components/Companies'
 // import Content from "./components/Content";
 // import Demo from './components/Demo';
@@ -15,8 +15,9 @@ import { Flowbite} from 'flowbite-react';
 
 
 
-// Import Components From Page
+// <<<Import Components From Page>>>
 import HomePage from "./pages/HomePage";
+import Team from "./pages/Team";
 
 
 
@@ -26,10 +27,17 @@ import HomePage from "./pages/HomePage";
 
 
 
-// Define the Home component for the root path
+
+// <<<Define the Home component for the root path>>>
 const HomePageComp = () =>(
   <Layout>
     <HomePage />
+  </Layout>
+);
+
+const TeamPage = () => (
+  <Layout>
+    <Team />
   </Layout>
 )
 
@@ -39,14 +47,15 @@ const HomePageComp = () =>(
 
 
 
+
 // router
 const router = createBrowserRouter([
-{path:'/', element: <HomePageComp />}
+{path:'/', element: <HomePageComp />},
+{path:'/team', element: <TeamPage />},
 
 
 
-
-])
+]);
 
 
 
