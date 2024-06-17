@@ -3,7 +3,7 @@ import React from 'react'
 export default function Services() {
   return (
     <div>
-<section className="bg-white dark:bg-gray-900 md:mt-32">
+<section id='services' className="bg-white dark:bg-gray-900 md:mt-32">
   <div className="container flex flex-col py-8 px-4 mx-auto max-w-screen-4xl sm:py-16 lg:px-6">
     <div className="max-w-screen text-center items-center justify-center mb-8 lg:mb-16">
       <h2 className="mb-4 md:text-5xl tracking-wide font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
